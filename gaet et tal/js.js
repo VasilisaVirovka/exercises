@@ -12,9 +12,9 @@ function TilfTal() {
 
 TilfTal();
 */
-
+import { TilfTal } from "../Utilities/utilities.js";
 var Gæt = document.querySelector(".gæt");
-var Tallet = TilfTal();
+var Tallet = TilfTal(100);
 const knap = document.querySelector(".button");
 var Feedback = document.querySelector(".feedback");
 const Kitty = document.querySelector(".cat");
@@ -35,9 +35,7 @@ function TjekTal() {
   }
 }
 
-function TilfTal() {
-  return Math.floor(Math.random() * 100);
-}
+
 
 console.log(Gæt);
 console.log(typeof Gæt.value);
