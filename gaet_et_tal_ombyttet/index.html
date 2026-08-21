@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gæt et tal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+</head>
+
+<body>
+    <main class="game">
+        <section class="card">
+            <p class="eyebrow">GÆT ET TAL</p>
+            <h1>Jeg gætter dit tal</h1>
+            <p class="intro">
+                Tænk på et tal mellem <strong>0 og 100</strong>.
+                Jeg prøver at finde det så hurtigt som muligt.
+            </p>
+
+            <div class="guess-box">
+                <p class="guess-label">Mit gæt</p>
+                <div class="guess" id="guess">-</div>
+            </div>
+
+            <p class="feedback" id="feedback">
+                Klik på start, når du har tænkt på et tal.
+            </p>
+
+            <div class="buttons">
+                <button class="button start" id="start">Start spil</button>
+
+                <div class="answer-buttons">
+                    <button class="button answer" id="tooLow" disabled>For lavt</button>
+                    <button class="button answer" id="correct" disabled>Rigtigt!</button>
+                    <button class="button answer" id="tooHigh" disabled>For højt</button>
+                </div>
+            </div>
+
+            <p class="attempts" id="attempts"></p>
+
+            <img
+                class="cat"
+                id="cat"
+                src="cat-celebrating-his-birthday-with-piece-cake-party-hat-funny-cat-wearing-festive-hat_997534-9671-294401768.jpg"
+                alt="Glad kat med fødselsdagshat"
+            >
+        </section>
+    </main>
+</body>
+</html>
