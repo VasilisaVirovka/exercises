@@ -1,0 +1,49 @@
+/* Hawaii theme */
+body[data-theme="hawaii"] {
+    --header-bg-col: #ff6f61;
+    --main-bg-col: #ffeaa7;
+    --text-col: #064663;
+    --border-col: #00b894;
+}
+
+/* Dark theme */
+body[data-theme="dark"] {
+    --header-bg-col: #222222;
+    --main-bg-col: #333333;
+    --text-col: #ffffff;
+    --border-col: #666666;
+}
+
+/* Light theme */
+body[data-theme="light"] {
+    --header-bg-col: #dddddd;
+    --main-bg-col: #ffffff;
+    --text-col: #222222;
+    --border-col: #aaaaaa;
+}
+
+
+/* General styling */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-col);
+    color: var(--text-col);
+}
+
+header {
+    background-color: var(--header-bg-col);
+    padding: 30px;
+    border-bottom: 5px solid var(--border-col);
+}
+
+main {
+    min-height: 400px;
+    padding: 30px;
+}
+
+footer {
+    padding: 20px 30px;
+    border-top: 2px solid var(--border-col);
+}
